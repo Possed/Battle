@@ -1,4 +1,3 @@
-
 feature 'Testing player s names' do
 
   it 'displays the players names' do
