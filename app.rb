@@ -3,14 +3,14 @@ require 'sinatra/base'
 class Battle < Sinatra::Base
 
   get '/' do
-    erb(:form)
+    erb(:index)
   end
 
-  post '/players' do
+  post '/names' do
     @p1 = params[:p1]
     @p2 = params[:p2]
     p params
-    erb(:index)
+    erb(:play)
   end
 
 
