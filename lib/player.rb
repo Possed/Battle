@@ -6,5 +6,7 @@ class Player
     @hp = 60
   end
 
+  def reduce_hp
+  end
 
 end

@@ -14,5 +14,9 @@ describe Player do
     end
   end
 
-  describe
+  describe '#reduce_hp' do
+    it 'reduces hp by 10 with every attack' do
+      expect{subject.reduce_hp}.to change{subject.hp}.by(-10)
+    end
+  end
 end
