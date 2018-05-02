@@ -20,7 +20,9 @@ class Battle < Sinatra::Base
     redirect '/play'
   end
 
-
+  get '/first_attack' do
+    "Igor attacked Roxana"
+  end
 
 
 
