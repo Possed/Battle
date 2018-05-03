@@ -14,9 +14,16 @@ describe Player do
     end
   end
 
+  describe '#hp' do
+    it 'returns the HP of the player' do
+      expect(roxana.hp).to eq described_class::DEFAULT_HP
+    end
+  end
+
   describe '#reduce_hp' do
     it 'reduces hp by 10 with every attack' do
       expect{subject.reduce_hp}.to change{subject.hp}.by(-10)
     end
   end
+
 end
